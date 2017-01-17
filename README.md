@@ -1,1 +1,2 @@
-# LintCodeSolution  #在LintCode上的答案
+# LintCodeSolution  
+# 在LintCode上的答案

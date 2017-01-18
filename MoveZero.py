@@ -23,9 +23,9 @@ class Solution(object):
             self.num.remove(0)
             self.num.insert(len(self.num), 0)
             i += 1
-        print self.num
+        return self.num
 
 if __name__ == '__main__':
     num = [0, 0, 1, 0, 3, 12]
     s = Solution(num)
-    s.move_zero()
+    print s.move_zero()

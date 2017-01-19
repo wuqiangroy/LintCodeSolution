@@ -22,7 +22,19 @@ def leveling_list(lst, res=None):
             res.append(item)
     return res
 
+
+def leveling_list2(lst):
+    new_lst = lst[:]
+    res = []
+    while new_lst:
+        head = new_lst.pop(0)
+        if isinstance(head, list):
+            new_lst = head + new_lst
+        else:
+            res.append(head)
+    return res
+
 if __name__ == '__main__':
     lst = [1, 2, [2, 3], 2, [2, 1]]
     print leveling_list(lst)
-
+    print leveling_list2(lst)
